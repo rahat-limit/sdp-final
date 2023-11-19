@@ -16,8 +16,6 @@ abstract class Book {
       required this.type,
       required this.pages,
       required this.exclusive});
-
-  void showType();
 }
 
 class FictionBook implements Book {
@@ -33,12 +31,6 @@ class FictionBook implements Book {
       required this.bookAuthor,
       required this.bookPages,
       required this.isExclusive});
-
-  @override
-  void showType() {
-    print("Fiction Book");
-  }
-
   @override
   String get author => this.bookAuthor;
 
@@ -70,11 +62,6 @@ class FairyTailBook implements Book {
       required this.isExclusive});
 
   @override
-  void showType() {
-    print("Fairy Tail Book");
-  }
-
-  @override
   String get author => this.bookAuthor;
 
   @override
@@ -88,33 +75,6 @@ class FairyTailBook implements Book {
 
   @override
   BookType get type => BookType.fairyTail;
-}
-
-class EmptyBook implements Book {
-  EmptyBook();
-
-  @override
-  void showType() {
-    print("Fairy Tail Book");
-  }
-
-  @override
-  String get author => '';
-
-  @override
-  bool get exclusive => false;
-
-  @override
-  int get pages => -1;
-
-  @override
-  String get title => 'No Book Found';
-
-  @override
-  BookType get type => BookType.fairyTail;
-
-  @override
-  String get id => '';
 }
 
 abstract class BookStore {
