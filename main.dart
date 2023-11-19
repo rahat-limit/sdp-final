@@ -51,16 +51,15 @@ void main() {
   // print('Length of Exlusive Books: ${adapter.filteredExlusiveBooks.length}');
 
   // // Decorator - позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные «обёртки».
-  var fairyTailPrice = CalculateDecorator(fairyTailBook);
+  // var fairyTailPrice = CalculateDecorator(fairyTailBook);
   // var fictionBookPrice = CalculateDecorator(fictionBook);
-  print('Price: ${fairyTailPrice.calculatePrice()}');
+  // print('Price: ${fairyTailPrice.calculatePrice()}');
   // print('Price: ${fictionBookPrice.calculatePrice()}');
 
   // UI INTERFACE
 
   // Functions: getAllBooks, search, add, buy
 
-  int count = 0;
   print(
       '====================👋👋👋 Welcome to BookStore, dear Customer!====================\n');
   while (true) {
