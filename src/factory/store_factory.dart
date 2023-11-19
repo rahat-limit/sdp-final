@@ -90,33 +90,6 @@ class FairyTailBook implements Book {
   BookType get type => BookType.fairyTail;
 }
 
-class EmptyBook implements Book {
-  EmptyBook();
-
-  @override
-  void showType() {
-    print("Fairy Tail Book");
-  }
-
-  @override
-  String get author => '';
-
-  @override
-  bool get exclusive => false;
-
-  @override
-  int get pages => -1;
-
-  @override
-  String get title => 'No Book Found';
-
-  @override
-  BookType get type => BookType.fairyTail;
-
-  @override
-  String get id => '';
-}
-
 abstract class BookStore {
   Book createBook();
 }
