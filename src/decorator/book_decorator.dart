@@ -23,8 +23,3 @@ class CalculateDecorator extends BookDecorator {
     return total;
   }
 }
-
-// class BookTwo extends BookDecorator {
-//   @override
-//   String calculatePrice() => 'Decoration Two';
-// }
